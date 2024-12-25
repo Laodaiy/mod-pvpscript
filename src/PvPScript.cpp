@@ -116,13 +116,13 @@ public:
         switch (phase)
         {
         case 1: //Announce in chat handler
-            ChatHandler(killed->GetSession()).PSendSysMessage("You have been killed by player [%s] ", name.c_str());
+            ChatHandler(killed->GetSession()).PSendSysMessage("您已被玩家[%s]杀死", name.c_str());
             break;
         case 2: //Announce in notifaction
-            ChatHandler(killed->GetSession()).PSendSysMessage("You have been slain by [{}]", name.c_str());
+            ChatHandler(killed->GetSession()).PSendSysMessage("您已被[{}]杀死", name.c_str());
             break;
         case 3: // Announe in Notifaction and chathandler
-            ChatHandler(killed->GetSession()).PSendSysMessage("You have been killed by player [%s] ", name.c_str());
+            ChatHandler(killed->GetSession()).PSendSysMessage("您已被玩家[%s]杀死", name.c_str());
             break;
         }
     }
